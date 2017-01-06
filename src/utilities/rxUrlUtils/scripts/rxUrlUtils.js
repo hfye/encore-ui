@@ -129,6 +129,15 @@ angular.module('encore.ui.utilities')
         return _.pick(urlParser, ['protocol', 'hostname', 'port', 'pathname', 'search', 'hash', 'host']);
     };
 })
+/**
+ * @ngdoc service
+ * @name utilities.service:urlUtils
+ * @deprecated
+ * Please use rxUrlUtils instead. This item will be removed on the 4.0.0 release.
+ * @description
+ *
+ * Set of utility functions to break apart/compare URLs.
+ */
 .service('urlUtils', function (rxUrlUtils) {
     console.warn(
         'DEPRECATED: urlUtils - Please use rxUrlUtils. ' +
